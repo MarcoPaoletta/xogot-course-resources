@@ -18,7 +18,7 @@ header{display:flex;justify-content:space-between;align-items:center;gap:20px;mi
 h1{font-size:clamp(44px,5.6vw,76px);font-weight:650;line-height:1.08;letter-spacing:-2.5px;margin:20px 0 24px}
 h1 em{font-style:normal;color:#6f8a6a}
 .lede{font-size:26px;line-height:1.55;color:var(--muted);max-width:760px}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;padding:64px 0;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:72px;align-items:center;padding:64px 0;border-top:1px solid var(--line)}
 .row.flip figure{order:-1}
 .num{font-size:20px;font-weight:800;color:#6f8a6a;letter-spacing:1px}
 h2{font-size:clamp(34px,3.6vw,52px);font-weight:650;line-height:1.14;letter-spacing:-1.6px;margin:12px 0 20px}
@@ -42,6 +42,7 @@ figcaption{font-size:16px;color:var(--muted);padding-top:12px;letter-spacing:.3p
 .site-list .button{padding:12px 22px;font-size:18px}
 .credits li{padding:16px 0;border-bottom:1px solid var(--line);font-size:19px;line-height:1.55;color:var(--muted)}
 .credits li:first-child{border-top:1px solid var(--line)}
+.credits a{overflow-wrap:anywhere}
 .credits b{color:var(--ink);font-weight:800}
 .credits a,.copy p a{color:var(--gold);font-weight:750;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
 .credits a:hover,.copy p a:hover{color:var(--ink)}
@@ -58,7 +59,7 @@ header{min-height:84px}
 .hdr-link{font-size:16px;padding:10px 18px}
 .hero{padding:48px 0 36px}
 .lede{font-size:22px}
-.row{grid-template-columns:1fr;gap:28px;padding:44px 0}
+.row{grid-template-columns:minmax(0,1fr);gap:28px;padding:44px 0}
 .row.flip figure{order:0}
 .copy p{font-size:20px}
 .actions{flex-direction:column;align-items:stretch}
